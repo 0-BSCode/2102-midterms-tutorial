@@ -7,6 +7,12 @@ const defaultValues = {
 
 export const DestinationContext = createContext(defaultValues)
 
+/**
+ * id
+ * destination
+ * price
+ */
+
 const DestinationProvider = ({children}) => {
     const [destinations, setDestinations] = useState([])
 

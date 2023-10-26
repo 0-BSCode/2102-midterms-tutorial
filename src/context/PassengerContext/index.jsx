@@ -7,6 +7,12 @@ const defaultValues = {
 
 export const PassengerContext = createContext(defaultValues)
 
+/**
+ * name
+ * id
+ * destination 
+ */
+
 const PassengerProvider = ({children}) => {
     const [passengers, setPassengers] = useState([])
 
