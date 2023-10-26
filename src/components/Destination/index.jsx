@@ -1,9 +1,12 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
+import { BusContext } from '../../context/BusContext'
 
-const Destination = ({destination}) => {
+const Destination = ({destination, passenger}) => {
+    const {addPassengerToBus} = useContext(BusContext)
+
   return (
-    <Button variant='contained'>{destination.destination}</Button>
+    <Button variant='contained' onClick={() => addPassengerToBus(passenger, destination)}>{destination.destination}</Button>
   )
 }
 

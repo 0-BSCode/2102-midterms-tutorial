@@ -12,7 +12,7 @@ const Passenger = ({passenger}) => {
       <p>{passenger.name}</p>
       <Box display='flex' gap={1}>
         {destinations.map((destination, idx) => (
-          <Destination key={`destination_${idx}`} destination={destination} />
+          <Destination key={`destination_${idx}`} destination={destination} passenger={passenger} />
         ))}
       </Box>
     </Box>
